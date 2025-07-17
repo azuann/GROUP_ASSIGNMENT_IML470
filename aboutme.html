@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Move Together</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: 'Segoe UI', sans-serif; }
+
+    .bg-video {
+      position: fixed;
+      right: 0; bottom: 0;
+      min-width: 100%; min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      opacity: 0.25;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      padding: 30px 20px 20px;
+      text-align: center;
+      border-bottom: 4px solid #ff2d55;
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 70px;
+      filter: drop-shadow(0 0 6px white);
+    }
+
+    header h1 {
+      font-family: 'Bebas Neue';
+      font-size: 3em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    .navbar a {
+      color: #ff2d55;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .navbar a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: #ff2d55;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover { color: white; }
+    .navbar a:hover::after { width: 100%; }
+
+    .intro {
+      background-color: rgba(0,0,0,0.85);
+      padding: 50px 20px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .intro-box {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .intro-box h2 {
+      font-family: 'Bebas Neue';
+      font-size: 2.5em;
+      color: #ff2d55;
+      margin-bottom: 10px;
+    }
+
+    .intro-box p {
+      font-size: 1em;
+      color: #ddd;
+      line-height: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .card {
+      background: #111;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      padding: 25px;
+      max-width: 280px;
+      text-align: center;
+      color: white;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff2d55;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      font-family: 'Bebas Neue';
+      font-size: 1.6em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #ccc;
+      margin-bottom: 6px;
+    }
+
+    .card .role {
+      font-size: 0.85em;
+      font-style: italic;
+      color: #ff2d55;
+    }
+
+    .card a {
+      color: #ff2d55;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover { text-decoration: underline; }
+
+    footer {
+      background: #000;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<video autoplay muted loop class="bg-video">
+  <source src="background.mp4" type="video/mp4">
+</video>
+
+<header>
+  <img src="nike-logo.png" alt="Nike Logo">
+  <h1>About Us</h1>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="campaign.html">MoveTogether</a></li>
+      <li><a href="aboutme.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="intro">
+  <div class="intro-box">
+    <h2>We are from Nike</h2>
+    <p>This is a student website built as part of our IML470 project at UiTM Rembau. Our team is passionate about health, movement, and building stronger communities through fitness.</p>
+    <p>Each member plays an important role in bringing the #MoveTogether campaign to life from planning local events, designing visuals, to promoting wellness for all.</p>
+  </div>
+</section>
+
+<section class="team">
+  <div class="card">
+    <img src="azuan.jpg" alt="Muhamad Azuan" />
+    <h2>Muhamad Azuan</h2>
+    <p>CDIM2602A | IML470 | 2025</p>
+    <p class="role">Marketing & Design</p>
+    <p><a href="https://instagram.com/azuannmn" target="_blank">Instagram</a></p>
+  </div>
+
+  <div class="card">
+    <img src="nabil.jpg" alt="Nabil Imran" />
+    <h2>Nabil Imran</h2>
+    <p>CDIM2602A | IML470 | 2025</p>
+    <p class="role">Program Coordinator</p>
+    <p><a href="https://instagram.com/nbl.imnaz" target="_blank">Instagram</a></p>
+  </div>
+
+  <div class="card">
+    <img src="hani.jpg" alt="Hani Naqibah" />
+    <h2>Hani Naqibah</h2>
+    <p>CDIM2602A | IML470 | 2025</p>
+    <p class="role">Fitness Instructor</p>
+    <p><a href="https://instagram.com/searojaaa" target="_blank">Instagram</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>We are from Nike | Student Project for IML470</p>
+</footer>
+
+</body>
+</html>
